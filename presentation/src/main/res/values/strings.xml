@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Suncorp</string>
+    <string name="loading_str">Loading...</string>
+    <string name="something_went_wrong">Something went wrong</string>
+</resources>

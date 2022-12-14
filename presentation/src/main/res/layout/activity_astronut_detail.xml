@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootLayout"
+    android:visibility="gone"
+    android:paddingBottom="@dimen/_20dp"
+    tools:context=".presentation.ui.features.astronutdetail.AstronutDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="@dimen/_20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="matrix"/>
+
+    <!--  name   -->
+    <TextView
+        android:id="@+id/tvNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profileImage"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/c_2E3156"
+        android:text="Name : "
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_below="@id/profileImage"
+        android:layout_toEndOf="@id/tvNameLabel"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tvNationalityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/c_2E3156"
+        android:text="Nationality :"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tvNationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_toEndOf="@id/tvNationalityLabel"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+
+
+    <TextView
+        android:id="@+id/tvDOBLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNationalityLabel"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/c_2E3156"
+        android:text="DOB :"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tvDOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNationalityLabel"
+        android:layout_toEndOf="@id/tvDOBLabel"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tvBioLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDOBLabel"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="@color/c_2E3156"
+        android:text="Bio :"
+        android:layout_marginStart="@dimen/_20dp"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+
+    <TextView
+        android:id="@+id/tvBio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvDOBLabel"
+        android:layout_toEndOf="@id/tvBioLabel"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginEnd="@dimen/_20dp"
+        android:textSize="@dimen/_20sp" />
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>
