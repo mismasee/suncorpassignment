@@ -14,7 +14,7 @@ class RepositoryModule {
 
     @Provides
     @Singleton
-    fun providePokemonRepository(repository: RepositoryImpl): RepositoryInterface {
+    fun provideRepository(repository: RepositoryImpl): RepositoryInterface {
         return repository
     }
 }

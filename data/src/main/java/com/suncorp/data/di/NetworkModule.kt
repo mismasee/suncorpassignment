@@ -24,7 +24,7 @@ object RetrofitModule {
 
     @Provides
     @Singleton
-    fun providePokemonApi(retrofit: Retrofit): APIInterface =
+    fun provideApi(retrofit: Retrofit): APIInterface =
         retrofit.create(APIInterface::class.java)
 
     @Provides
